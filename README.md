@@ -139,7 +139,7 @@ Cadena de Conexión Base de datos
 ```
 "AllowedHosts": "*",
   "ConnectionStrings": {
-    "Database": "Server=192.168.1.142;Database=Cientificos;User ID=admin;Password=1qazxsw2"
+    "Database": "Server=192.168.1.142;Database=GrandesAlmacenes;User ID=admin;Password=1qazxsw2"
     }
 ```
 #### 3. URIs endpoints.
@@ -174,6 +174,69 @@ DELETE    /api/Venta/{id}
 ```
 #### 4. Proyect
 ![image](https://user-images.githubusercontent.com/76429837/108001639-44f87d00-6fed-11eb-9b35-789ff6abac55.png)
+
+## Ejercicio 4
+#### 1.Description
+```
+Demo API REST creada con .NET COre 3.1 utilizando varias entidades ER y conectada con base de datos 
+MS Sql Virtualizada sobre Fedora 32  y Virtualbox 6.1. Aplicación con fines educativos.
+```
+
+#### 2. Tech Stack
+Install
+```
+IDE               Visual Studio 2019 Community Version
+Core              C# 
+Framework         NET Core 3.1
+DataBase          Microsoft Sql Server 
+Virtual           VirtualBox 6.1
+SO                Fedora 32
+````
+Nuget packages
+```
+Install-Package Microsoft.VisualStudio.Web.CodeGeneration.Design  -Version 3.1.4
+Install-Package Microsoft.EntityFrameworkCore.Tools               -Version 3.1.8
+Install-Package Microsoft.EntityFrameworkCore.SqlServer           -Version 3.1.8
+```
+Cadena de Conexión Base de datos
+```
+"AllowedHosts": "*",
+  "ConnectionStrings": {
+    "Database": "Server=192.168.1.142;Database=Investigadores;User ID=admin;Password=1qazxsw2"
+    }
+```
+#### 3. URIs endpoints.
+```
+Investigadores
+GET       /api/Investigadores
+POST      /api/Investigadores
+GET       /api/Investigadores/{id}
+PUT       /api/Investigadores/{id}
+DELETE    /api/Investigadores/{id}
+
+Facultades
+GET       /api/Facultades
+POST      /api/Facultades
+GET       /api/Facultades/{id}
+PUT       /api/Facultades/{id}
+DELETE    /api/Facultades/{id}
+
+Equipos
+GET       /api/Equipos
+POST      /api/Equipos
+GET       /api/Equipos/{id}
+PUT       /api/Equipos/{id}
+DELETE    /api/Equipos/{id}
+
+Reservas
+GET       /api/Reservas
+POST      /api/Reservas
+GET       /api/Reservas/{id}
+PUT       /api/Reservas/{id}
+DELETE    /api/Reservas/{id}
+```
+#### 4. Proyect
+![image](https://user-images.githubusercontent.com/76429837/108002942-6196b400-6ff1-11eb-84e1-655fd2d07494.png)
 
 
 
