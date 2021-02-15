@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\jpola\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\jpola\\.nuget\\packages"
+    ]
+  }
+}
